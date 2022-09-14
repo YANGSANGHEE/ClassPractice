@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script>
+    const root = document.getElementById("root"); // root라는 아이디를 가진 요소를 상수에 담음
+    let getValue = window.prompt('하이픈 없이 핸드폰 번호를 입력'); // 윈도우 prompt메서드로 핸드폰 값을 받아옴
+
+    if (getValue === null) { // 만약 getValue(핸드폰번호) 값이 없을때
+      function promptDataSetting() {
+        let data; // 빈 변수를 선언
+        return data; // 빈값을 리턴
+      }
+      promptDataSetting() // 빈값을 리턴하는 함수를 호출한다.
+    } else { // 값이 입력되었을때
+      console.log('pending') // pending이라는 문자열을 콘솔로 찍음
+    }
+  </script>
+</body>
+
+</html>
